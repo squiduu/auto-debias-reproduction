@@ -27,20 +27,23 @@ Install all of the above requirements after setup.
 cd auto_debias/
 bash generate_prompts.sh
 ```
-Then you wil get the generated prompts file under `./data/debias/`
+You wil get the generated prompts file under `./data/debias/`
 ### Debiasing models
 ```
 bash auto_debias.sh
 ```
-Then you will get the debiased checkpoint under `./auto_debias/out/`
+You will get the debiased checkpoint under `./auto_debias/out/`
 ## Evaluation
 ### SEAT
 ```
 cd ../seat/
 bash run_seat.sh
 ```
+You will get the SEAT result under `./seat/out/`
 ### GLUE
+This is a single task trainer, so you have to manually fine-tune for each task.
 ```
 cd ../glue/
 bash run_glue.sh
 ```
+You will get the GLUE result under `./glue/out/`

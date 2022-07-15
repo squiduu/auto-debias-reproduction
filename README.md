@@ -27,12 +27,12 @@ Install all of the above requirements after setup.
 cd auto_debias/
 bash generate_prompts.sh
 ```
-Then you wil get the generated prompts file in `./data/debias/prompts_{model_name_or_path}_{bias_type}`
+Then you wil get the generated prompts file under `./data/debias/`
 ### Debiasing models
 ```
 bash auto_debias.sh
 ```
-Then you will get the debiased checkpoint in `./auto_debias/out/{model_name}_{run_name}_{bias_type}_epoch:{epoch}`
+Then you will get the debiased checkpoint under `./auto_debias/out/`
 ## Evaluation
 ### SEAT
 ```
